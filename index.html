@@ -1,0 +1,37 @@
+<style type="text/css">
+    .conainter.footer-abonnement {
+        display: none;
+    }
+    
+    .container.footer-social {
+        display: none;
+    }
+    
+    .container.footline {
+        display: none;
+    }
+</style>
+<link href="https://livecentercdn.norkon.net/scripts/ncposts/ncposts-5.0.8.min.css" id="lc-css-link" rel="stylesheet" />
+<!-- location of CSS defined in the LiveCenter extensions. Not needed if extensions are never to be used. -->
+<link href="https://livecentercdn.norkon.net/LiveCenter/ExtensionCss/demochannel" rel="stylesheet" />
+<!-- D3 used by NcElements. Not needed if no charts are ever used. -->
+<script src="https://livecentercdn.norkon.net/Content/scripts/NcPosts/d3-3.5.4.min.js"></script>
+<!-- NcPost JavaScript code. -->
+<script src="https://livecentercdn.norkon.net/scripts/ncposts/ncposts-5.0.8.min.js"></script>
+<!-- location of any JavaScript defined in the Livecenter extensions. Not needed if extensions are never to be used. -->
+<script src="https://livecentercdn.norkon.net/LiveCenter/ExtensionJs/demochannel"></script>
+<!-- Containing element for the feed. This element is sent to NcPosts.start as "container". -->
+<div class="lc-default-theme lc-feed-container">
+    <div id="master-container">&nbsp;</div>
+
+    <div style="text-align: center"><button class="lc-load-more" id="livecenter-load-more">Load more</button></div>
+</div>
+<script type="text/javascript">
+    NcPosts.start({
+        channelId: 14981,
+        container: document.getElementById("master-container"),
+        showMoreElement: document.getElementById("livecenter-load-more"),
+        tenantKey: "clicanoo",
+        extensionContainer: window.NcLiveCenterExtensions
+    });
+</script>
